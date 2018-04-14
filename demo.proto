@@ -1,0 +1,9 @@
+syntax = "proto2";
+enum cmdId_t
+{
+    SayHello = 0;
+};
+message msgSayHello{
+    required cmdId_t cmdId = 1 [ default = SayHello ];
+    required string msg = 2; 
+}
